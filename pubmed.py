@@ -4,3 +4,8 @@ def search(query):
 	handle = Entrez.esearch(db='pubmed',sort='relevance',retmax='20',retmode = 'xml',term=query)
 	results = Entrez.read(handle)
 	return results
+
+park = search('parkinson disease)
+Park_ID = park['IdList']
+
+
